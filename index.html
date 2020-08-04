@@ -14,40 +14,39 @@
 	$('#myModal2').on('shown.bs.modal', function () {
   $('#myInput').trigger('focus')
 })
-	$('#myTab a').on('click', function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-})
+
+$(document).ready(function(){
+	$('[data-toggle="tab"]').tab();
+});
 	</script>
 <meta charset="utf-8">
 <title>panel</title>
 </head>
 
 <body>
-	<div class="container-fluid" style="margin-top: 20px;">
+	<div class="container-fluid">
 		<div class="row">
-			
-			<div class="col-2">
+			<div class="col-sm-2">
 				<div class="text-center"><img class="img-st" alt="" src="assets/images/avatar-1577909_1280.jpeg"></div>
 				<hr>
 				<div class="tabs-st">
-					<ul class="nav flex-column" id="myTab">
-					  <li class="nav-item">
-						<a class="nav-link" href="#">داشبورد</a>
+					<ul class="nav nav-tabs flex-column" id="myTab" role="tablist">
+					  <li class="nav-item" >
+						<a class="nav-link" href="#" role="tab" data-toggle="tab">داشبورد</a>
 					  </li>
-					  <li class="nav-item">
-						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">میز کار</a>
+					  <li class="nav-item" >
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="tab">میز کار</a>
 						<div class="dropdown-menu">
 						  <a class="dropdown-item " href="#">اتوماسیون</a>
 						  <a class="dropdown-item" href="#">نمایندگان</a>
 						</div>
 					 </li>
 					  <li class="nav-item">
-						<a class="nav-link" href="#">پیشخوان خدمت</a>
+						<a class="nav-link" href="#"  role="tab" data-toggle="tab">پیشخوان خدمت</a>
 					  </li>
 						
 					  <li class="nav-item">
-						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">امور مالی</a>
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"  role="tab">امور مالی</a>
 						<div class="dropdown-menu">
 						  <a class="dropdown-item" href="#">گزارش مالی</a>
 						  <a class="dropdown-item" href="#">افزایش موجودی</a>
@@ -56,23 +55,24 @@
 						</div>
 					 </li>
 						<hr>
-						 <li class="nav-item">
-						<a class="nav-link" href="#">پروفایل من</a>
+						 <li class="nav-item" >
+						<a class="nav-link" href="#" role="tab" data-toggle="tab">پروفایل من</a>
 					  </li>
 					  <li class="nav-item">
-						<a class="nav-link" href="#">تنظیمات</a>
+						<a class="nav-link" href="#"  role="tab" data-toggle="tab">تنظیمات</a>
 					  </li>
-					  <li class="nav-item">
-						<a class="nav-link" href="#">خروج</a>
+					  <li class="nav-item" >
+						<a class="nav-link" href="#" role="tab" data-toggle="tab">خروج</a>
 					  </li>
 						<hr>
-						 <li class="nav-item">
-						<a class="nav-link" href="#">پشتیبانی</a>
+						 <li class="nav-item" >
+						<a class="nav-link" href="#" role="tab" data-toggle="tab">پشتیبانی</a>
 					  </li>
 					</ul>
 				</div>
+				
 			</div>
-			<div class="col-10">
+			<div class="col-sm-10">
 				<div class="row">
 					<div class="col-5">
 					<label for="name-user">نام کاربر:</label>
@@ -82,9 +82,18 @@
 					</div>
 				</div>
 		<hr>
+		<div class="row">
+				<div class="col-5">
 		<div class="button-st">
 		<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">ثبت مشتری جدید</button>
 			</div>
+				</div>
+				<div class="col-5">
+						<div class="button-st">
+							<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal2">جستجوی مشتری</button>
+						</div>
+					</div>
+					</div>
 		<div class="modal" id="myModal" role="dialog">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -112,9 +121,6 @@
 			</div>	
 		</div>
 		
-	<div class="button-st">
-		<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal2">جستجوی مشتری</button>
-	</div>
 				<div class="modal" id="myModal2" role="dialog">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -153,77 +159,41 @@
 					<td></td>
 					<td></td>
 					<td>
-						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/survey.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/document.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/print.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/scanner.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/scanner.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/confirm.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/registration.png" title="ثبت مشتری"></div>
+						<div class="icon-bg"><img src="assets/images/survey.png" title="استعلام کارا"></div>
+						<div class="icon-bg"><img src="assets/images/document.png" title="ثبت قرارداد"></div>
+						<div class="icon-bg"><img src="assets/images/registration.png" title="پذیرش بورس"></div>
+						<div class="icon-bg"><img src="assets/images/print.png" title="پرینت"></div>
+						<div class="icon-bg"><img src="assets/images/face.png" title="اسکن مدارک هویتی"></div>
+						<div class="icon-bg"><img src="assets/images/scanner.png" title="اسکن قراداد"></div>
+						<div class="icon-bg"><img src="assets/images/mail.png" title="دریافت نام کاربری"></div>
+						<div class="icon-bg"><img src="assets/images/comment.png" title="ارسال نام کاربری"></div>
+						<div class="icon-bg"><img src="assets/images/truck.png" title="ارسال قرارداد" onclick="bg-color"></div>
+						<div class="icon-bg"><img src="assets/images/shipped.png" title="تاییدیه دریافت"></div>
+						
 					</td>
 					<td></td>
 				</tr>
-				<tr class="table">
-					<td>2</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td>
-						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/survey.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/document.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/print.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/scanner.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/scanner.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/confirm.png" alt=""></div>
-					</td>
-					<td></td>
-				</tr>
-				<tr class="table">
-					<td>3</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td>
-						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/survey.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/document.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/print.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/scanner.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/scanner.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/confirm.png" alt=""></div>
-					</td>
-					<td></td>
-				</tr>
-				<tr class="table">
-					<td>4</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td>
-						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/survey.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/document.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/print.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/scanner.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/scanner.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
-						<div class="icon-bg"><img src="assets/images/confirm.png" alt=""></div>
-					</td>
-					<td></td>
-				</tr>
+			
+			
 			</table>
+			<nav aria-label="Page navigation example" class="page-st">
+				<ul class="pagination">
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+						</a>
+					</li>
+					<li class="page-item"><a class="page-link" href="#">1</a></li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
 		</div>
 	</div>
