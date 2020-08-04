@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+	<script>
+	$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})</script>
+	<script>
+	$('#myModal2').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+	$('#myTab a').on('click', function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+	</script>
+<meta charset="utf-8">
+<title>panel</title>
+</head>
+
+<body>
+	<div class="container-fluid" style="margin-top: 20px;">
+		<div class="row">
+			
+			<div class="col-2">
+				<div class="text-center"><img class="img-st" alt="" src="assets/images/avatar-1577909_1280.jpeg"></div>
+				<hr>
+				<div class="tabs-st">
+					<ul class="nav flex-column" id="myTab">
+					  <li class="nav-item">
+						<a class="nav-link" href="#">داشبورد</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">میز کار</a>
+						<div class="dropdown-menu">
+						  <a class="dropdown-item " href="#">اتوماسیون</a>
+						  <a class="dropdown-item" href="#">نمایندگان</a>
+						</div>
+					 </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#">پیشخوان خدمت</a>
+					  </li>
+						
+					  <li class="nav-item">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">امور مالی</a>
+						<div class="dropdown-menu">
+						  <a class="dropdown-item" href="#">گزارش مالی</a>
+						  <a class="dropdown-item" href="#">افزایش موجودی</a>
+						  <a class="dropdown-item" href="#">برداشت</a>
+						  <a class="dropdown-item" href="#">درخواست اعتبار</a>
+						</div>
+					 </li>
+						<hr>
+						 <li class="nav-item">
+						<a class="nav-link" href="#">پروفایل من</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#">تنظیمات</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#">خروج</a>
+					  </li>
+						<hr>
+						 <li class="nav-item">
+						<a class="nav-link" href="#">پشتیبانی</a>
+					  </li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-10">
+				<div class="row">
+					<div class="col-5">
+					<label for="name-user">نام کاربر:</label>
+					</div>
+					<div class="col-5">
+					<label for="name-user">تاریخ ساخت:</label>
+					</div>
+				</div>
+		<hr>
+		<div class="button-st">
+		<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">ثبت مشتری جدید</button>
+			</div>
+		<div class="modal" id="myModal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				<div class="modal-title">ثبت نام</div>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">&times</button>
+					</div>
+				<div class="modal-body">
+				<form action="">
+					<div class="form-group">
+						<label for="name" class="lb-form">نام و نام خانوادگی:</label>
+						<input type="text" class="form-control" id="name">
+						<label for="tel" class="lb-form">شماره تماس:</label>
+						<input type="tel" class="form-control" id="tel">
+						<label for="code" class="lb-form">شماره ملی:</label>
+						<input type="text" class="form-control" id="code">
+						<button type="submit" class="btn btn-success btn-block" style="margin-top: 20px;">ثبت</button>
+					</div>	
+				</form>
+				</div>
+				<div class="modal-footer">
+					
+				 </div>
+				</div>
+			</div>	
+		</div>
+		
+	<div class="button-st">
+		<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal2">جستجوی مشتری</button>
+	</div>
+				<div class="modal" id="myModal2" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				<div class="modal-title">جستجو</div>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">&times</button>
+					</div>
+				<div class="modal-body">
+				<form action="">
+					<div class="form-group">
+						<input class="form-control" type="text">
+					</div>	
+				</form>
+				</div>
+				<div class="modal-footer">
+					
+				 </div>
+				</div>
+			</div>	
+		</div>
+		<div>
+			<table class="table table-hover table-striped table-bordered">
+				<thead>
+				<tr class="table">
+					<th width="5%">ردیف</th>
+					<th width="15%">نام و نام خانوادگی</th>
+					<th width="10%">تاریخ ثبت</th>
+					<th width="10%">وضعیت</th>
+					<th width="40%">عملیات</th>
+					<th width="20%">توضیحات</th>
+				</tr>
+				</thead>
+				<tr class="table">
+					<td>1</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>
+						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/survey.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/document.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/print.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/scanner.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/scanner.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/confirm.png" alt=""></div>
+					</td>
+					<td></td>
+				</tr>
+				<tr class="table">
+					<td>2</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>
+						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/survey.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/document.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/print.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/scanner.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/scanner.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/confirm.png" alt=""></div>
+					</td>
+					<td></td>
+				</tr>
+				<tr class="table">
+					<td>3</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>
+						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/survey.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/document.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/print.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/scanner.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/scanner.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/confirm.png" alt=""></div>
+					</td>
+					<td></td>
+				</tr>
+				<tr class="table">
+					<td>4</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>
+						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/survey.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/document.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/print.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/scanner.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/scanner.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/registration.png" alt=""></div>
+						<div class="icon-bg"><img src="assets/images/confirm.png" alt=""></div>
+					</td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+		</div>
+	</div>
+	</div>
+</body>
+</html>

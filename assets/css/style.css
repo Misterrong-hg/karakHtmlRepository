@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+  font-family: 'vazir';
+  src: url("../fonts/Vazir-Black-FD.eot"); 
+  src: url('webfont.eot?#iefix') format('embedded-opentype'),
+         url("../fonts/Vazir-Black-FD.woff2") format('woff2'),
+         url("../fonts/Vazir-Black-FD.woff") format('woff'),
+         url("../fonts/Vazir-Black-FD.ttf")  format('truetype');
+font-family: 'vazir';
+  src: url("../fonts/Vazir-Bold-FD.eot"); 
+  src: url('webfont.eot?#iefix') format('embedded-opentype'),
+         url("../fonts/Vazir-Bold-FD.woff2") format('woff2'),
+         url("../fonts/Vazir-Bold-FD.woff") format('woff'),
+         url("../fonts/Vazir-Bold-FD.ttf")  format('truetype');
+
+}
+
+body{
+	direction: rtl;
+	text-align: right;
+	font-family: 'vazir';
+}
+.button-st{
+	display: inline-block;
+	margin-bottom: 20px;
+}
+table{
+	text-align: center;
+}
+.lb-form{
+	margin-top: 20px;
+}
+.tabs-st{
+	margin-top: 50px;
+}
+.img-st{
+
+	width: 80%;
+	height: 80%;
+	border-radius: 50%;
+	border: 1px solid grey;
+	padding: 2px;
+	background: #fff;
+}
+.icon-bg{
+	background-color: rgba(188,180,180,0.5);
+	padding: 5px;
+	border-radius: 50%;
+	display: inline-block;
+	box-shadow: 0 0 2px grey;
+	cursor: pointer;
+}
+.user-id{
+	width: 80%;
+	padding: 12px;
+	display: table;
+	margin: -10px auto;
+	text-align: center;
+	background-color: rgba(203,203,203,0.70);
+	border-radius: 30px;
+}
