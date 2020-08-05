@@ -7,72 +7,85 @@
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="https://unpkg.com/@popperjs/core@2"></script>
 	<script>
-	$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})</script>
-	<script>
-	$('#myModal2').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
-
-$(document).ready(function(){
-	$('[data-toggle="tab"]').tab();
-});
-	</script>
+	function myFunction() {
+		var nmObj = document.getElementById("name");
+		document.getElementById("info").innerHTML = nmObj.value;
+	}
+</script>
 <meta charset="utf-8">
 <title>panel</title>
 </head>
-
 <body>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-2">
-				<div class="text-center"><img class="img-st" alt="" src="assets/images/avatar-1577909_1280.jpeg"></div>
+			<div class="col-lg-2 col-sm-12">
+				<div class="text-center"><img class="img-st" src="assets/images/avatar-1577909_1280.jpeg"></div>
 				<hr>
-				<div class="tabs-st">
-					<ul class="nav nav-tabs flex-column" id="myTab" role="tablist">
-					  <li class="nav-item" >
+				<div>
 						<a class="nav-link" href="#" role="tab" data-toggle="tab">داشبورد</a>
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">میز کار</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item " href="#">اتوماسیون</a>
+								<a class="dropdown-item" href="#">نمایندگان</a>
+							</div>
+							<a class="nav-link" href="#"  role="tab" data-toggle="tab">پیشخوان خدمت</a>
+							<a class="nav-link dropdown-toggle"  href="#" data-toggle="dropdown">امور مالی</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">گزارش مالی</a>
+									<a class="dropdown-item" href="#">افزایش موجودی</a>
+									<a class="dropdown-item" href="#">برداشت</a>
+									<a class="dropdown-item" href="#">درخواست اعتبار</a>
+								</div>
+							
+								<a class="nav-link" href="#" role="tab" data-toggle="tab">پروفایل من</a>
+								<a class="nav-link" href="#"  role="tab" data-toggle="tab">تنظیمات</a>
+								<a class="nav-link" href="#" role="tab" data-toggle="tab">خروج</a>
+								<a class="nav-link" href="#" role="tab" data-toggle="tab">پشتیبانی</a>
+				</div>
+				<!--
+			<div class="tabs-st">
+					<ul class="nav nav-tabs nav-stacked flex-column" id="myTab" role="tablist">
+					  <li>
+							<a class="nav-link" href="#" role="tab" data-toggle="tab">داشبورد</a>
 					  </li>
-					  <li class="nav-item" >
-						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="tab">میز کار</a>
-						<div class="dropdown-menu">
-						  <a class="dropdown-item " href="#">اتوماسیون</a>
-						  <a class="dropdown-item" href="#">نمایندگان</a>
-						</div>
-					 </li>
-					  <li class="nav-item">
-						<a class="nav-link" href="#"  role="tab" data-toggle="tab">پیشخوان خدمت</a>
+					  <li>
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">میز کار</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item " href="#">اتوماسیون</a>
+								<a class="dropdown-item" href="#">نمایندگان</a>
+							</div>
 					  </li>
-						
-					  <li class="nav-item">
-						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"  role="tab">امور مالی</a>
-						<div class="dropdown-menu">
-						  <a class="dropdown-item" href="#">گزارش مالی</a>
-						  <a class="dropdown-item" href="#">افزایش موجودی</a>
-						  <a class="dropdown-item" href="#">برداشت</a>
-						  <a class="dropdown-item" href="#">درخواست اعتبار</a>
-						</div>
-					 </li>
+					  <li>
+							<a class="nav-link" href="#"  role="tab" data-toggle="tab">پیشخوان خدمت</a>
+						</li>	
+						<li>
+							<a class="nav-link dropdown-toggle"  href="#" data-toggle="dropdown">امور مالی</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">گزارش مالی</a>
+									<a class="dropdown-item" href="#">افزایش موجودی</a>
+									<a class="dropdown-item" href="#">برداشت</a>
+									<a class="dropdown-item" href="#">درخواست اعتبار</a>
+								</div>
+						</li>
 						<hr>
-						 <li class="nav-item" >
-						<a class="nav-link" href="#" role="tab" data-toggle="tab">پروفایل من</a>
+						<li>
+							<a class="nav-link" href="#" role="tab" data-toggle="tab">پروفایل من</a>
 					  </li>
-					  <li class="nav-item">
-						<a class="nav-link" href="#"  role="tab" data-toggle="tab">تنظیمات</a>
+					  <li>
+							<a class="nav-link" href="#"  role="tab" data-toggle="tab">تنظیمات</a>
 					  </li>
-					  <li class="nav-item" >
-						<a class="nav-link" href="#" role="tab" data-toggle="tab">خروج</a>
+					  <li>
+							<a class="nav-link" href="#" role="tab" data-toggle="tab">خروج</a>
 					  </li>
 						<hr>
-						 <li class="nav-item" >
-						<a class="nav-link" href="#" role="tab" data-toggle="tab">پشتیبانی</a>
+						<li>
+							<a class="nav-link" href="#" role="tab" data-toggle="tab">پشتیبانی</a>
 					  </li>
 					</ul>
 				</div>
-				
+				-->
 			</div>
-			<div class="col-sm-10">
+			<div class="col-lg-10 col-sm-12">
 				<div class="row">
 					<div class="col-5">
 					<label for="name-user">نام کاربر:</label>
@@ -102,21 +115,18 @@ $(document).ready(function(){
 					<button type="button" class="btn btn-secondary" data-dismiss="modal">&times</button>
 					</div>
 				<div class="modal-body">
-				<form action="">
+				<form action="" method="POST">
 					<div class="form-group">
-						<label for="name" class="lb-form">نام و نام خانوادگی:</label>
-						<input type="text" class="form-control" id="name">
-						<label for="tel" class="lb-form">شماره تماس:</label>
-						<input type="tel" class="form-control" id="tel">
-						<label for="code" class="lb-form">شماره ملی:</label>
-						<input type="text" class="form-control" id="code">
-						<button type="submit" class="btn btn-success btn-block" style="margin-top: 20px;">ثبت</button>
+						<label for="name" class="lable-form">نام و نام خانوادگی:</label>
+						<input type="text" class="form-control" id="name" name="name" value="" required>
+						<label for="tel" class="lable-form">شماره تماس:</label>
+						<input type="tel" class="form-control" id="tel" name="phoneNumber" value="">
+						<label for="code" class="lable-form">شماره ملی:</label>
+						<input type="text" class="form-control" id="code" name="nationalNumber" value="">
+						<input type="submit" value="ثبت" class="btn btn-success btn-block" style="margin-top: 20px;" onclick="myFunction()"/>
 					</div>	
 				</form>
 				</div>
-				<div class="modal-footer">
-					
-				 </div>
 				</div>
 			</div>	
 		</div>
@@ -129,15 +139,12 @@ $(document).ready(function(){
 					<button type="button" class="btn btn-secondary" data-dismiss="modal">&times</button>
 					</div>
 				<div class="modal-body">
-				<form action="">
-					<div class="form-group">
-						<input class="form-control" type="text">
-					</div>	
-				</form>
+						<form method="get" id="searchform" action="">
+								<input id="searchsubmit" value="" type="submit" />
+								<input value="" name="s" id="s" type="text" placeholder="جستجو کنید" />
+						</form>
+
 				</div>
-				<div class="modal-footer">
-					
-				 </div>
 				</div>
 			</div>	
 		</div>
@@ -146,33 +153,33 @@ $(document).ready(function(){
 				<thead>
 				<tr class="table">
 					<th width="5%">ردیف</th>
-					<th width="15%">نام و نام خانوادگی</th>
+					<th width="13%">نام و نام خانوادگی</th>
 					<th width="10%">تاریخ ثبت</th>
 					<th width="10%">وضعیت</th>
-					<th width="40%">عملیات</th>
+					<th width="42%">عملیات</th>
 					<th width="20%">توضیحات</th>
 				</tr>
 				</thead>
 				<tr class="table">
-					<td>1</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td>
-						<div class="icon-bg"><img src="assets/images/registration.png" title="ثبت مشتری"></div>
+					<td id="num">1</td>
+					<td><p id="info"></p></td>
+					<td id="date"></td>
+					<td id="cond"></td>
+					<td id="do">
+						<div class="icon-bg"><img src="assets/images/register.png" title="ثبت مشتری"></div>
 						<div class="icon-bg"><img src="assets/images/survey.png" title="استعلام کارا"></div>
 						<div class="icon-bg"><img src="assets/images/document.png" title="ثبت قرارداد"></div>
 						<div class="icon-bg"><img src="assets/images/registration.png" title="پذیرش بورس"></div>
 						<div class="icon-bg"><img src="assets/images/print.png" title="پرینت"></div>
 						<div class="icon-bg"><img src="assets/images/face.png" title="اسکن مدارک هویتی"></div>
 						<div class="icon-bg"><img src="assets/images/scanner.png" title="اسکن قراداد"></div>
-						<div class="icon-bg"><img src="assets/images/mail.png" title="دریافت نام کاربری"></div>
-						<div class="icon-bg"><img src="assets/images/comment.png" title="ارسال نام کاربری"></div>
-						<div class="icon-bg"><img src="assets/images/truck.png" title="ارسال قرارداد" onclick="bg-color"></div>
+						<div class="icon-bg"><img src="assets/images/mail.png" title="ارسال فایل به تهران"></div>
+						<div class="icon-bg"><img src="assets/images/comment.png" title="دریافت نام کاربری"></div>
+						<div class="icon-bg"><img src="assets/images/review.png" title="ارسال نام کاربری"></div>
+						<div class="icon-bg"><img src="assets/images/truck.png" title="ارسال قرارداد"></div>
 						<div class="icon-bg"><img src="assets/images/shipped.png" title="تاییدیه دریافت"></div>
-						
 					</td>
-					<td></td>
+					<td id="desc"></td>
 				</tr>
 			
 			

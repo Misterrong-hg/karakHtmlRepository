@@ -22,10 +22,10 @@ body{
 	text-align: right;
 	font-family: 'vazir';
 }
-.col-sm-10{
+.col-lg-10{
 margin: auto;
 }
-.col-sm-2{
+.col-lg-2{
 	vertical-align: middle;
 
 }
@@ -42,11 +42,10 @@ table{
 .tabs-st{
 	margin-top: 50px;
 }
-.tabs-st a{
+.nav-link{
 	color: black;
 }
 .img-st{
-
 	width: 70%;
 	height: 70%;
 	border-radius: 50%;
@@ -61,6 +60,9 @@ table{
 	display: inline-block;
 	box-shadow: 0 0 2px grey;
 	cursor: pointer;
+}
+.icon-bg:hover{
+	background-color:rgba(188,180,180,0.8);
 }
 .user-id{
 	width: 80%;
