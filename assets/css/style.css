@@ -64,15 +64,6 @@ table{
 .icon-bg:hover{
 	background-color:rgba(188,180,180,0.8);
 }
-.user-id{
-	width: 80%;
-	padding: 12px;
-	display: table;
-	margin: -10px auto;
-	text-align: center;
-	background-color: rgba(203,203,203,0.70);
-	border-radius: 30px;
-}
 .page-st{
 	display: table;
 	margin: 0 auto;
